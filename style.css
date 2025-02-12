@@ -1,139 +1,86 @@
-/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Orbitron', sans-serif;
+    background: #0a0a0a;
+    color: #fff;
     margin: 0;
     padding: 0;
-    background: radial-gradient(circle, #1a1a2e, #16213e, #0f3460);
-    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 10px neonblue;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    color: #00ffcc;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn {
+    background: #00ffcc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('https://source.unsplash.com/1600x900/?cyberpunk,technology') no-repeat center;
+    background-size: cover;
+}
+
+.hero h1 {
+    font-size: 50px;
+    color: #00ffcc;
+}
+
+.dashboard-section {
+    padding: 60px;
     text-align: center;
 }
 
-/* Hero Section */
-.hero {
-    padding: 50px;
-    background: linear-gradient(135deg, #ff4081, #6f42c1);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-}
-
-/* Main Container */
-.main-container {
+.service-cards, .pricing-cards {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px 20px;
+    justify-content: center;
+    gap: 20px;
 }
 
-/* Glass Panel */
-.glass-panel {
+.card {
     background: rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    backdrop-filter: blur(10px);
     padding: 20px;
-    margin: 20px;
-    width: 80%;
-    max-width: 600px;
-    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
-}
-
-/* Circular UI Elements */
-.circle {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-weight: bold;
-    text-transform: uppercase;
-    position: absolute;
-    transition: transform 0.3s ease-in-out;
-}
-
-.circle.large {
-    width: 150px;
-    height: 150px;
-    background: radial-gradient(circle, #ff4081, #6f42c1);
-    top: 50px;
-}
-
-.circle.small {
-    width: 80px;
-    height: 80px;
-    background: radial-gradient(circle, #28a745, #fd7e14);
-    bottom: 50px;
-}
-
-/* Services */
-.services {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-.service-card {
-    background: rgba(255, 255, 255, 0.2);
-    padding: 15px;
     border-radius: 10px;
-    width: 120px;
-    transition: 0.3s;
+    width: 250px;
+    box-shadow: 0 0 10px #00ffcc;
 }
 
-.service-card:hover {
-    background: rgba(255, 255, 255, 0.4);
-    transform: scale(1.05);
+.card h3 {
+    color: #00ffcc;
 }
 
-/* Portfolio */
-.portfolio-grid {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.portfolio-item {
-    width: 100px;
-    height: 100px;
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 10px;
-}
-
-/* Contact Form */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-input, textarea {
-    width: 80%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    outline: none;
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
-}
-
-button {
-    padding: 10px;
-    background: #ffc107;
-    color: black;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-/* 🔥 Add Neon Glow to Icons */
-.service-card i {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #ffcc00;
-    text-shadow: 0 0 10px rgba(255, 204, 0, 0.8);
-}
-
-/* 🎨 Background Image (Blurred Sci-Fi Style) */
-body {
-    background: url('assets/background.jpg') no-repeat center center/cover;
-    backdrop-filter: blur(5px);
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
 }
