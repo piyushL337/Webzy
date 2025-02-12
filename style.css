@@ -1,26 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 
-/* Neon Gradient Animated Background */
-@keyframes neonBackground {
-    0% { background: linear-gradient(-45deg, #00ffcc, #ff00ff, #0000ff, #ffcc00); }
-    25% { background: linear-gradient(-45deg, #ff00ff, #0000ff, #ffcc00, #00ffcc); }
-    50% { background: linear-gradient(-45deg, #0000ff, #ffcc00, #00ffcc, #ff00ff); }
-    75% { background: linear-gradient(-45deg, #ffcc00, #00ffcc, #ff00ff, #0000ff); }
-    100% { background: linear-gradient(-45deg, #00ffcc, #ff00ff, #0000ff, #ffcc00); }
-}
-
+/* Static Neon Background */
 body {
     font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(135deg, #00ffcc, #000022, #ff00ff);
+    background-size: cover;
+    color: #fff;
     margin: 0;
     padding: 0;
-    height: 100vh;
-    color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    animation: neonBackground 10s infinite alternate linear;
-    background-size: 300% 300%;
+}
+
+/* Neon Border Animation */
+@keyframes neonBorder {
+    0% { border-color: #00ffcc; box-shadow: 0 0 10px #00ffcc; }
+    25% { border-color: #ff00ff; box-shadow: 0 0 10px #ff00ff; }
+    50% { border-color: #ffcc00; box-shadow: 0 0 10px #ffcc00; }
+    75% { border-color: #0000ff; box-shadow: 0 0 10px #0000ff; }
+    100% { border-color: #00ffcc; box-shadow: 0 0 10px #00ffcc; }
+}
+
+/* Apply Neon Border Effect */
+.card, .btn, .navbar {
+    border: 2px solid;
+    animation: neonBorder 3s infinite alternate;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Button Hover Effect */
+.btn:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
 }
 
 .navbar {
@@ -62,7 +76,7 @@ body {
 .hero {
     text-align: center;
     padding: 100px 20px;
-    background: url('https://source.unsplash.com/1600x900/?cyberpunk,technology') no-repeat center;
+    background: white no-repeat center;
     background-size: cover;
 }
 
