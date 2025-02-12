@@ -3,61 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webzy.Tech</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Webzy.Tech - Web App Development</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
 
-    <!-- Main Container -->
-    <div class="main-container">
-        <header class="hero">
-            <h1>WEB APP DEVELOPMENT</h1>
-            <p>Modern & Futuristic Web App Solutions</p>
-        </header>
+    <header class="navbar">
+        <div class="logo">Webzy<span>.Tech</span></div>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="btn">Get Started</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <!-- Dashboard UI -->
-        <div class="dashboard">
-            <div class="circle large">UI</div>
-            <div class="circle small">UX</div>
-            <div class="circle small">Design</div>
-            <div class="circle small">Tools</div>
+    <section class="hero">
+        <h1>Build Future-Ready Web Apps</h1>
+        <p>Cutting-edge solutions powered by Webzy.Tech</p>
+        <a href="#" class="btn">Start Your Project</a>
+    </section>
 
-            <div class="glass-panel">
-                <h2>Our Services</h2>
-                <div class="services">
-    <div class="service-card">
-        <i class="fas fa-laptop-code"></i> Custom Apps
-    </div>
-    <div class="service-card">
-        <i class="fas fa-paint-brush"></i> UI/UX Design
-    </div>
-    <div class="service-card">
-        <i class="fas fa-cogs"></i> API Integration
-    </div>
-</div>
-
-            <div class="glass-panel">
-                <h2>Portfolio</h2>
-                <div class="portfolio-grid">
-                    <div class="portfolio-item"></div>
-                    <div class="portfolio-item"></div>
-                    <div class="portfolio-item"></div>
-                </div>
+    <section id="services" class="dashboard-section">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Custom Web Apps</h3>
+                <p>Build scalable, high-performance applications tailored to your needs.</p>
             </div>
-
-            <div class="glass-panel">
-                <h2>Contact Us</h2>
-                <form>
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn">Send</button>
-                </form>
+            <div class="card">
+                <i class="fas fa-cloud"></i>
+                <h3>Cloud Integration</h3>
+                <p>Seamless integration with AWS, Azure, and Google Cloud.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-lock"></i>
+                <h3>Secure Development</h3>
+                <p>Best security practices ensuring safe and reliable applications.</p>
             </div>
         </div>
-    </div>
+    </section>
+
+    <section id="pricing" class="dashboard-section">
+        <h2>Pricing Plans</h2>
+        <div class="pricing-cards">
+            <div class="card">
+                <h3>Basic</h3>
+                <p>Ideal for startups</p>
+                <h4>$499</h4>
+                <a href="#" class="btn">Choose Plan</a>
+            </div>
+            <div class="card">
+                <h3>Pro</h3>
+                <p>For growing businesses</p>
+                <h4>$999</h4>
+                <a href="#" class="btn">Choose Plan</a>
+            </div>
+            <div class="card">
+                <h3>Enterprise</h3>
+                <p>Full-scale solutions</p>
+                <h4>$1999</h4>
+                <a href="#" class="btn">Choose Plan</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="dashboard-section">
+        <h2>Client Reviews</h2>
+        <div class="testimonial">
+            <p>"Webzy.Tech transformed our business with an amazing web app!"</p>
+            <h4>- John Doe, CEO</h4>
+        </div>
+        <div class="testimonial">
+            <p>"Top-notch development with futuristic UI. Highly recommend!"</p>
+            <h4>- Jane Smith, CTO</h4>
+        </div>
+    </section>
+
+    <section id="contact" class="dashboard-section">
+        <h2>Contact Us</h2>
+        <p>Email: support@webzy.tech | Phone: +123 456 7890</p>
+        <a href="#" class="btn">Get in Touch</a>
+    </section>
+
+    <footer>
+        <p>© 2025 Webzy.Tech - All Rights Reserved</p>
+    </footer>
 
 </body>
 </html>
